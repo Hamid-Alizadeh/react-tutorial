@@ -4,34 +4,58 @@ import ReactDom from "react-dom";
 // CSS
 import "./index.css";
 
-const bookImage =
-  "https://images-na.ssl-images-amazon.com/images/I/91uwocAMtSL._AC_UL200_SR200,200_.jpg";
-const bookTitle = "A Promise Land";
-const bookAuthor = "Barack Obama";
+const firstBook = {
+  img:
+    "https://images-na.ssl-images-amazon.com/images/I/91uwocAMtSL._AC_UL200_SR200,200_.jpg",
+  title: "A Promise Land",
+  author: "Barack Obama",
+};
 
-const Book = () => {
+const secondBook = {
+  img:
+    "https://images-na.ssl-images-amazon.com/images/I/71Ks%2B8mKq2L._AC_UL200_SR200,200_.jpg",
+  title: "The Deep End (Diary of a Wimpy Kid Book 15)",
+  author: "Jeff Kinney",
+};
+
+const Book = (props) => {
   return (
     <article className="book">
-      <BookImage />
-      <Title />
-      <Author />
+      <BookImage img={props.img} title={props.title} />
+      <Title title={props.title} />
+      <Author author={props.author} />
     </article>
   );
 };
 
-const BookImage = () => <img src={bookImage} alt={bookTitle} />;
+const BookImage = (props) => <img src={props.img} alt={props.title} />;
 
-const Title = () => <h2>{bookTitle}</h2>;
-const Author = () => <strong>{bookAuthor.toUpperCase()}</strong>;
+const Title = (props) => <h2>{props.title}</h2>;
+const Author = (props) => <strong>{props.author.toUpperCase()}</strong>;
 
 function BookList() {
   return (
     <section className="booklist">
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
+      <Book
+        img={firstBook.img}
+        title={firstBook.title}
+        author={firstBook.author}
+      />
+      <Book
+        img={secondBook.img}
+        title={secondBook.title}
+        author={secondBook.author}
+      />
+      <Book
+        img={firstBook.img}
+        title={firstBook.title}
+        author={firstBook.author}
+      />
+      <Book
+        img={secondBook.img}
+        title={secondBook.title}
+        author={secondBook.author}
+      />
     </section>
   );
 }
