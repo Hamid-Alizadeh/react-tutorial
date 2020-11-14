@@ -22,7 +22,7 @@ const Book = () => {
 const BookImage = () => <img src={bookImage} alt={bookTitle} />;
 
 const Title = () => <h2>{bookTitle}</h2>;
-const Author = () => <strong>{bookAuthor}</strong>;
+const Author = () => <strong>{bookAuthor.toUpperCase()}</strong>;
 
 function BookList() {
   return (
