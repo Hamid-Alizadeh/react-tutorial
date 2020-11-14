@@ -16,3 +16,18 @@ body {
   display: grid;
   gap: 2rem;
 }
+
+.book {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 2rem;
+  padding: 2rem 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
