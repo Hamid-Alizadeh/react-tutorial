@@ -5,7 +5,7 @@ import "./index.css";
 
 const Book = () => {
   return (
-    <article>
+    <article className="book">
       <BookImage />
       <Title />
       <Author />
