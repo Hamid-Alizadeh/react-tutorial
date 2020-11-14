@@ -30,6 +30,11 @@ body {
   margin-bottom: 1rem;
 }
 
+.book strong {
+  color: #505090;
+  font-size: 0.75rem;
+}
+
 @media screen and (min-width: 768px) {
   .booklist {
     grid-template-columns: repeat(3, 1fr);
