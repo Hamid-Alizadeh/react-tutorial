@@ -32,6 +32,7 @@ body {
 
 .book h2 {
   color: #202020;
+  font-size: 1.4rem;
 }
 
 .book strong {
@@ -42,6 +43,8 @@ body {
 
 .book p {
   color: #404040;
+  text-align: justify;
+  text-justify: inter-character;
 }
 
 @media screen and (min-width: 768px) {
