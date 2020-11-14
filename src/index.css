@@ -30,13 +30,23 @@ body {
   margin-bottom: 1rem;
 }
 
+.book h2 {
+  color: #202020;
+}
+
 .book strong {
   color: #505090;
   font-size: 0.75rem;
+  margin: 0.3rem 0 0.5rem;
+}
+
+.book p {
+  color: #404040;
 }
 
 @media screen and (min-width: 768px) {
   .booklist {
     grid-template-columns: repeat(3, 1fr);
+    align-items: start;
   }
 }
