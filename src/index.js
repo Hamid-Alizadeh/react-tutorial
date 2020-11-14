@@ -1,22 +1,32 @@
 import React from "react";
 import ReactDom from "react-dom";
 
-const Person = () => <h1>This Hamid</h1>;
-const Message = () => {
+const Book = () => {
   return (
-    <p>
-      We are leaning <strong>React</strong>
-    </p>
+    <article>
+      <BookImage />
+      <Title />
+      <Author />
+    </article>
   );
 };
 
-function Greeting() {
+const BookImage = () => (
+  <img
+    src="https://images-na.ssl-images-amazon.com/images/I/91uwocAMtSL._AC_UL200_SR200,200_.jpg"
+    alt="A Promise Land"
+  />
+);
+
+const Title = () => <h2>A Promised Land</h2>;
+const Author = () => <strong>Barack Obama</strong>;
+
+function BookList() {
   return (
-    <div>
-      <Person />
-      <Message />
-    </div>
+    <section>
+      <Book />
+    </section>
   );
 }
 
-ReactDom.render(<Greeting />, document.getElementById("root"));
+ReactDom.render(<BookList />, document.getElementById("root"));
