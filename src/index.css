@@ -8,3 +8,11 @@ body {
   background-color: #f1f1f8;
   color: #212128;
 }
+
+.booklist {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
