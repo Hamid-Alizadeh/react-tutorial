@@ -25,7 +25,7 @@ const Author = () => <strong>Barack Obama</strong>;
 
 function BookList() {
   return (
-    <section>
+    <section className="booklist">
       <Book />
       <Book />
       <Book />
