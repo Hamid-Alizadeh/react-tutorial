@@ -14,7 +14,7 @@ const firstBook = {
 const secondBook = {
   img:
     "https://images-na.ssl-images-amazon.com/images/I/71Ks%2B8mKq2L._AC_UL200_SR200,200_.jpg",
-  title: "The Deep End (Diary of a Wimpy Kid Book 15)",
+  title: "Diary of a Wimpy Kid - The Deep End",
   author: "Jeff Kinney",
 };
 
