@@ -6,21 +6,7 @@ import "./index.css";
 
 import { bookList } from "./books";
 
-const Book = (props) => {
-  const { img, title, author } = props;
-  return (
-    <article className="book">
-      <BookImage img={img} alt={title} />
-      <Title title={title} />
-      <Author author={author} />
-    </article>
-  );
-};
-
-const BookImage = ({ img, alt }) => <img src={img} alt={alt} />;
-
-const Title = (props) => <h2>{props.title}</h2>;
-const Author = (props) => <strong>{props.author.toUpperCase()}</strong>;
+import Book from "./Book";
 
 function BookList() {
   return (
