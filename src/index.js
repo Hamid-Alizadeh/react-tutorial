@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
 
-// CSS
+// Import CSS
 import "./index.css";
 
 import { bookList } from "./books";
