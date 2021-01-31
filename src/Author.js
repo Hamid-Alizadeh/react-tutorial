@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Author = (props) => <strong>{props.author.toUpperCase()}</strong>;
 
