@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Author = (props) => <strong>{props.author.toUpperCase()}</strong>;
+const Author = (props) => <p><strong>{props.author.toUpperCase()}</strong></p>;
 
 export default Author;
