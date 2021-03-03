@@ -24,7 +24,7 @@ export const bookList = [
     id: 4,
     img:
       "https://images-na.ssl-images-amazon.com/images/I/81hx39H8JEL._AC_UL200_SR200,200_.jpg",
-    title: "The World Needs Who You Were Made to Be",
+    title: "The World Needs Who You Were Made To Be",
     author: "Joanna Gaines",
   },
 ];
